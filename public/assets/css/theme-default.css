@@ -3,7 +3,7 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,500,600,700&subset=latin,latin-ext);
 @import "jquery/jquery-ui.min.css";
 @import "bootstrap/bootstrap.min.css";
-@import "fontawesome/font-awesome.min.css";
+@import "fontawesome/css/fontawesome-all.min.css";
 @import "summernote/summernote.css";
 @import "codemirror/codemirror.css";
 @import "nvd3/nv.d3.css";
@@ -28,11 +28,11 @@
   clear: both;
 }
 .background-colorful {
-  background: linear-gradient(left, #E04B4A 0%, #1caf9a 50%, #95b75d 100%);
-  background: -o-linear-gradient(left, #E04B4A 0%, #1caf9a 50%, #95b75d 100%);
-  background: -moz-linear-gradient(left, #E04B4A 0%, #1caf9a 50%, #95b75d 100%);
-  background: -webkit-linear-gradient(left, #E04B4A 0%, #1caf9a 50%, #95b75d 100%);
-  background: -ms-linear-gradient(left, #E04B4A 0%, #1caf9a 50%, #95b75d 100%);
+  background: linear-gradient(to left, #E04B4A 0%, #1caf9a 50%, #95b75d 100%);
+  background: -o-linear-gradient(to left, #E04B4A 0%, #1caf9a 50%, #95b75d 100%);
+  background: -moz-linear-gradient(to left, #E04B4A 0%, #1caf9a 50%, #95b75d 100%);
+  background: -webkit-linear-gradient(to left, #E04B4A 0%, #1caf9a 50%, #95b75d 100%);
+  background: -ms-linear-gradient(to left, #E04B4A 0%, #1caf9a 50%, #95b75d 100%);
   background: -webkit-gradient(linear, left top, right top, color-stop(0, #E04B4A), color-stop(0.5, #1caf9a), color-stop(1, #95b75d));
 }
 /* EOF PREDEFINED CLASSES */
@@ -44,7 +44,7 @@ body {
   min-height: 100%;
   padding: 0px;
   margin: 0px;
-  background: #f5f5f5 url('../img/bg.png') left top repeat;
+  background: #f5f5f5 url('/img/bg.png') left top repeat;
   position: relative;
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
@@ -105,7 +105,7 @@ body {
 .page-container .page-content {
   min-height: 100%;
   margin-left: 220px;
-  background: #f5f5f5 url('../img/bg.png') left top repeat;
+  background: #f5f5f5 url('/img/bg.png') left top repeat;
   position: relative;
   zoom: 1;
 }
@@ -121,7 +121,7 @@ body {
   float: left;
   width: 100%;
   position: relative;
-  background: #f5f5f5 url('../img/bg.png') left top repeat;
+  background: #f5f5f5 url('/img/bg.png') left top repeat;
 }
 .page-container .page-content .content-frame .content-frame-top {
   float: left;
@@ -241,7 +241,7 @@ body {
   padding-right: 50px;
 }
 body.page-container-boxed {
-  background: url("../img/backgrounds/wall_1.jpg") left top no-repeat fixed;
+  background: url("/img/backgrounds/wall_1.jpg") left top no-repeat fixed;
   padding: 20px 0px;
 }
 body.page-container-boxed .page-container {
@@ -769,7 +769,7 @@ body.page-container-boxed .page-container {
 .x-navigation.x-navigation-minimized > li.xn-logo > a:first-child {
   padding: 0px;
   width: 50px;
-  background-image: url("../img/logo-small.png");
+  background-image: url("/img/logo-small.png");
 }
 .x-navigation.x-navigation-minimized .xn-search input {
   width: 30px;
@@ -1195,7 +1195,7 @@ body.page-container-boxed .page-container {
 }
 .breadcrumb > li + li:before {
   font-family: "FontAwesome";
-  content: "\f105";
+  /*content: "\f105";*/
   color: #4d5669;
   padding: 0px 8px;
 }
@@ -1450,11 +1450,11 @@ a.list-group-item:focus {
   content: "";
   width: 100%;
   height: 2px;
-  background: linear-gradient(left, #E04B4A 0%, #1caf9a 50%, #95b75d 100%);
-  background: -o-linear-gradient(left, #E04B4A 0%, #1caf9a 50%, #95b75d 100%);
-  background: -moz-linear-gradient(left, #E04B4A 0%, #1caf9a 50%, #95b75d 100%);
-  background: -webkit-linear-gradient(left, #E04B4A 0%, #1caf9a 50%, #95b75d 100%);
-  background: -ms-linear-gradient(left, #E04B4A 0%, #1caf9a 50%, #95b75d 100%);
+  background: linear-gradient(to left, #E04B4A 0%, #1caf9a 50%, #95b75d 100%);
+  background: -o-linear-gradient(to left, #E04B4A 0%, #1caf9a 50%, #95b75d 100%);
+  background: -moz-linear-gradient(to left, #E04B4A 0%, #1caf9a 50%, #95b75d 100%);
+  background: -webkit-linear-gradient(to left, #E04B4A 0%, #1caf9a 50%, #95b75d 100%);
+  background: -ms-linear-gradient(to left, #E04B4A 0%, #1caf9a 50%, #95b75d 100%);
   background: -webkit-gradient(linear, left top, right top, color-stop(0, #E04B4A), color-stop(0.5, #1caf9a), color-stop(1, #95b75d));
   display: block;
   left: 0px;
@@ -1908,7 +1908,7 @@ ul.panel-controls > li > .dropdown-menu:before {
   right: 0px;
   bottom: 0px;
   text-indent: 0px;
-  background: url(../img/jquery/resize-icon.png) left top no-repeat;
+  background: url(/img/jquery/resize-icon.png) left top no-repeat;
 }
 /* EOF XNAV PANEL */
 /* EOF PANELS */
@@ -2774,11 +2774,11 @@ blockquote.pull-right {
   background-color: #1caf9a;
 }
 .progress-bar-colorful {
-  background: linear-gradient(left, #E04B4A 0%, #1caf9a 50%, #95b75d 100%);
-  background: -o-linear-gradient(left, #E04B4A 0%, #1caf9a 50%, #95b75d 100%);
-  background: -moz-linear-gradient(left, #E04B4A 0%, #1caf9a 50%, #95b75d 100%);
-  background: -webkit-linear-gradient(left, #E04B4A 0%, #1caf9a 50%, #95b75d 100%);
-  background: -ms-linear-gradient(left, #E04B4A 0%, #1caf9a 50%, #95b75d 100%);
+  background: linear-gradient(to left, #E04B4A 0%, #1caf9a 50%, #95b75d 100%);
+  background: -o-linear-gradient(to left, #E04B4A 0%, #1caf9a 50%, #95b75d 100%);
+  background: -moz-linear-gradient(to left, #E04B4A 0%, #1caf9a 50%, #95b75d 100%);
+  background: -webkit-linear-gradient(to left, #E04B4A 0%, #1caf9a 50%, #95b75d 100%);
+  background: -ms-linear-gradient(to left, #E04B4A 0%, #1caf9a 50%, #95b75d 100%);
   background: -webkit-gradient(linear, left top, right top, color-stop(0, #E04B4A), color-stop(0.5, #1caf9a), color-stop(1, #95b75d));
 }
 /* EOF PROGRESS BARS */
@@ -3872,7 +3872,7 @@ background: #1caf9a !important;
   float: left;
   width: 100%;
   min-height: 100%;
-  background: url("../img/bg.png") left top repeat #1b1e24;
+  background: url("/img/bg.png") left top repeat #1b1e24;
 }
 .login-container .login-box {
   width: 400px;
@@ -3880,7 +3880,7 @@ background: #1caf9a !important;
   padding-top: 100px;
 }
 .login-container .login-box .login-logo {
-  background: url("../img/logo.png") top center no-repeat;
+  background: url("/img/logo.png") top center no-repeat;
   width: 100%;
   height: 50px;
   float: left;
@@ -3964,7 +3964,7 @@ background: #1caf9a !important;
   color: #FFF;
 }
 .login-container.lightmode {
-  background: url("../img/backgrounds/wall_1.jpg") left top no-repeat;
+  background: url("/img/backgrounds/wall_1.jpg") left top no-repeat;
 }
 .login-container.lightmode .login-box .login-body {
   background: rgba(255, 255, 255, 0.2);
@@ -4123,7 +4123,7 @@ background: #1caf9a !important;
   font-size: 12px;
   padding: 7px 15px;
   line-height: 20px;
-  width: 110px;
+  width: 150px;
   text-align: center;
   background: #F5F5F5;
   border: 3px solid #FFF;
@@ -5029,7 +5029,7 @@ background: #1caf9a !important;
   padding: 0;
   width: 18px;
   height: 18px;
-  background: url("../img/icheck/grey.png") no-repeat;
+  background: url("/img/icheck/grey.png") no-repeat;
   border: none;
   cursor: pointer;
 }
@@ -5336,7 +5336,7 @@ div.datepicker thead tr:first-child th:hover {
 .colorpicker-saturation {
   width: 100px;
   height: 100px;
-  background-image: url(../img/colorpicker/saturation.png);
+  background-image: url(/img/colorpicker/saturation.png);
   cursor: crosshair;
   float: left;
 }
@@ -5381,10 +5381,10 @@ div.datepicker thead tr:first-child th:hover {
   margin-top: -1px;
 }
 .colorpicker-hue {
-  background-image: url(../img/colorpicker/hue.png);
+  background-image: url(/img/colorpicker/hue.png);
 }
 .colorpicker-alpha {
-  background-image: url(../img/colorpicker/alpha.png);
+  background-image: url(/img/colorpicker/alpha.png);
   display: none;
 }
 .colorpicker {
@@ -5413,7 +5413,7 @@ div.datepicker thead tr:first-child th:hover {
   height: 10px;
   margin-top: 5px;
   clear: both;
-  background-image: url(../img/colorpicker/alpha.png);
+  background-image: url(/img/colorpicker/alpha.png);
   background-position: 0 100%;
 }
 .colorpicker-color div {
@@ -6091,7 +6091,7 @@ input.ui-editRangeSlider-inputValue {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .grabbing {
-  cursor: url(../img/owl/grabbing.png) 8 8, move;
+  cursor: url(/img/owl/grabbing.png) 8 8, move;
 }
 .owl-carousel .owl-wrapper,
 .owl-carousel .owl-item {
@@ -6163,7 +6163,7 @@ input.ui-editRangeSlider-inputValue {
 }
 .owl-item.loading {
   min-height: 150px;
-  background: url(../img/owl/AjaxLoader.gif) no-repeat center center;
+  background: url(/img/owl/AjaxLoader.gif) no-repeat center center;
 }
 /* END Slider */
 /* jVectorMaps */
@@ -6527,7 +6527,7 @@ div.tagsinput div {
   font-size: 999px;
   text-align: right;
   color: #fff;
-  background: transparent url(../img/fileinput/loading.gif) top left no-repeat;
+  background: transparent url(/img/fileinput/loading.gif) top left no-repeat;
   border: none;
 }
 .btn-file {
@@ -6627,7 +6627,7 @@ div.tagsinput div {
   display: none;
 }
 .loading {
-  background: transparent url(../img/loading.gif) no-repeat scroll center center content-box !important;
+  background: transparent url(/img/loading.gif) no-repeat scroll center center content-box !important;
 }
 .wrap-indicator {
   font-weight: 700;
@@ -6919,191 +6919,191 @@ ul.jqueryFileTree a:hover {
   background: #E9EDF1;
 }
 li.directory {
-  background: url(../img/filetree/directory.png) left top no-repeat;
+  background: url(/img/filetree/directory.png) left top no-repeat;
 }
 li.expanded {
-  background: url(../img/filetree/folder_open.png) left top no-repeat;
+  background: url(/img/filetree/folder_open.png) left top no-repeat;
 }
 li.file {
-  background: url(../img/filetree/file.png) left top no-repeat;
+  background: url(/img/filetree/file.png) left top no-repeat;
 }
 li.wait {
-  background: url(../img/filetree/spinner.gif) left top no-repeat;
+  background: url(/img/filetree/spinner.gif) left top no-repeat;
 }
 /* File Extensions*/
 li.ext_3gp {
-  background: url(../img/filetree/film.png) left top no-repeat;
+  background: url(/img/filetree/film.png) left top no-repeat;
 }
 li.ext_afp {
-  background: url(../img/filetree/code.png) left top no-repeat;
+  background: url(/img/filetree/code.png) left top no-repeat;
 }
 li.ext_afpa {
-  background: url(../img/filetree/code.png) left top no-repeat;
+  background: url(/img/filetree/code.png) left top no-repeat;
 }
 li.ext_asp {
-  background: url(../img/filetree/code.png) left top no-repeat;
+  background: url(/img/filetree/code.png) left top no-repeat;
 }
 li.ext_aspx {
-  background: url(../img/filetree/code.png) left top no-repeat;
+  background: url(/img/filetree/code.png) left top no-repeat;
 }
 li.ext_avi {
-  background: url(../img/filetree/film.png) left top no-repeat;
+  background: url(/img/filetree/film.png) left top no-repeat;
 }
 li.ext_bat {
-  background: url(../img/filetree/application.png) left top no-repeat;
+  background: url(/img/filetree/application.png) left top no-repeat;
 }
 li.ext_bmp {
-  background: url(../img/filetree/picture.png) left top no-repeat;
+  background: url(/img/filetree/picture.png) left top no-repeat;
 }
 li.ext_c {
-  background: url(../img/filetree/code.png) left top no-repeat;
+  background: url(/img/filetree/code.png) left top no-repeat;
 }
 li.ext_cfm {
-  background: url(../img/filetree/code.png) left top no-repeat;
+  background: url(/img/filetree/code.png) left top no-repeat;
 }
 li.ext_cgi {
-  background: url(../img/filetree/code.png) left top no-repeat;
+  background: url(/img/filetree/code.png) left top no-repeat;
 }
 li.ext_com {
-  background: url(../img/filetree/application.png) left top no-repeat;
+  background: url(/img/filetree/application.png) left top no-repeat;
 }
 li.ext_cpp {
-  background: url(../img/filetree/code.png) left top no-repeat;
+  background: url(/img/filetree/code.png) left top no-repeat;
 }
 li.ext_css {
-  background: url(../img/filetree/css.png) left top no-repeat;
+  background: url(/img/filetree/css.png) left top no-repeat;
 }
 li.ext_doc {
-  background: url(../img/filetree/doc.png) left top no-repeat;
+  background: url(/img/filetree/doc.png) left top no-repeat;
 }
 li.ext_exe {
-  background: url(../img/filetree/application.png) left top no-repeat;
+  background: url(/img/filetree/application.png) left top no-repeat;
 }
 li.ext_gif {
-  background: url(../img/filetree/picture.png) left top no-repeat;
+  background: url(/img/filetree/picture.png) left top no-repeat;
 }
 li.ext_fla {
-  background: url(../img/filetree/flash.png) left top no-repeat;
+  background: url(/img/filetree/flash.png) left top no-repeat;
 }
 li.ext_h {
-  background: url(../img/filetree/code.png) left top no-repeat;
+  background: url(/img/filetree/code.png) left top no-repeat;
 }
 li.ext_htm {
-  background: url(../img/filetree/html.png) left top no-repeat;
+  background: url(/img/filetree/html.png) left top no-repeat;
 }
 li.ext_html {
-  background: url(../img/filetree/html.png) left top no-repeat;
+  background: url(/img/filetree/html.png) left top no-repeat;
 }
 li.ext_jar {
-  background: url(../img/filetree/java.png) left top no-repeat;
+  background: url(/img/filetree/java.png) left top no-repeat;
 }
 li.ext_jpg {
-  background: url(../img/filetree/picture.png) left top no-repeat;
+  background: url(/img/filetree/picture.png) left top no-repeat;
 }
 li.ext_jpeg {
-  background: url(../img/filetree/picture.png) left top no-repeat;
+  background: url(/img/filetree/picture.png) left top no-repeat;
 }
 li.ext_js {
-  background: url(../img/filetree/script.png) left top no-repeat;
+  background: url(/img/filetree/script.png) left top no-repeat;
 }
 li.ext_lasso {
-  background: url(../img/filetree/code.png) left top no-repeat;
+  background: url(/img/filetree/code.png) left top no-repeat;
 }
 li.ext_log {
-  background: url(../img/filetree/txt.png) left top no-repeat;
+  background: url(/img/filetree/txt.png) left top no-repeat;
 }
 li.ext_m4p {
-  background: url(../img/filetree/music.png) left top no-repeat;
+  background: url(/img/filetree/music.png) left top no-repeat;
 }
 li.ext_mov {
-  background: url(../img/filetree/film.png) left top no-repeat;
+  background: url(/img/filetree/film.png) left top no-repeat;
 }
 li.ext_mp3 {
-  background: url(../img/filetree/music.png) left top no-repeat;
+  background: url(/img/filetree/music.png) left top no-repeat;
 }
 li.ext_mp4 {
-  background: url(../img/filetree/film.png) left top no-repeat;
+  background: url(/img/filetree/film.png) left top no-repeat;
 }
 li.ext_mpg {
-  background: url(../img/filetree/film.png) left top no-repeat;
+  background: url(/img/filetree/film.png) left top no-repeat;
 }
 li.ext_mpeg {
-  background: url(../img/filetree/film.png) left top no-repeat;
+  background: url(/img/filetree/film.png) left top no-repeat;
 }
 li.ext_ogg {
-  background: url(../img/filetree/music.png) left top no-repeat;
+  background: url(/img/filetree/music.png) left top no-repeat;
 }
 li.ext_pcx {
-  background: url(../img/filetree/picture.png) left top no-repeat;
+  background: url(/img/filetree/picture.png) left top no-repeat;
 }
 li.ext_pdf {
-  background: url(../img/filetree/pdf.png) left top no-repeat;
+  background: url(/img/filetree/pdf.png) left top no-repeat;
 }
 li.ext_php {
-  background: url(../img/filetree/php.png) left top no-repeat;
+  background: url(/img/filetree/php.png) left top no-repeat;
 }
 li.ext_png {
-  background: url(../img/filetree/picture.png) left top no-repeat;
+  background: url(/img/filetree/picture.png) left top no-repeat;
 }
 li.ext_ppt {
-  background: url(../img/filetree/ppt.png) left top no-repeat;
+  background: url(/img/filetree/ppt.png) left top no-repeat;
 }
 li.ext_psd {
-  background: url(../img/filetree/psd.png) left top no-repeat;
+  background: url(/img/filetree/psd.png) left top no-repeat;
 }
 li.ext_pl {
-  background: url(../img/filetree/script.png) left top no-repeat;
+  background: url(/img/filetree/script.png) left top no-repeat;
 }
 li.ext_py {
-  background: url(../img/filetree/script.png) left top no-repeat;
+  background: url(/img/filetree/script.png) left top no-repeat;
 }
 li.ext_rb {
-  background: url(../img/filetree/ruby.png) left top no-repeat;
+  background: url(/img/filetree/ruby.png) left top no-repeat;
 }
 li.ext_rbx {
-  background: url(../img/filetree/ruby.png) left top no-repeat;
+  background: url(/img/filetree/ruby.png) left top no-repeat;
 }
 li.ext_rhtml {
-  background: url(../img/filetree/ruby.png) left top no-repeat;
+  background: url(/img/filetree/ruby.png) left top no-repeat;
 }
 li.ext_rpm {
-  background: url(../img/filetree/linux.png) left top no-repeat;
+  background: url(/img/filetree/linux.png) left top no-repeat;
 }
 li.ext_ruby {
-  background: url(../img/filetree/ruby.png) left top no-repeat;
+  background: url(/img/filetree/ruby.png) left top no-repeat;
 }
 li.ext_sql {
-  background: url(../img/filetree/db.png) left top no-repeat;
+  background: url(/img/filetree/db.png) left top no-repeat;
 }
 li.ext_swf {
-  background: url(../img/filetree/flash.png) left top no-repeat;
+  background: url(/img/filetree/flash.png) left top no-repeat;
 }
 li.ext_tif {
-  background: url(../img/filetree/picture.png) left top no-repeat;
+  background: url(/img/filetree/picture.png) left top no-repeat;
 }
 li.ext_tiff {
-  background: url(../img/filetree/picture.png) left top no-repeat;
+  background: url(/img/filetree/picture.png) left top no-repeat;
 }
 li.ext_txt {
-  background: url(../img/filetree/txt.png) left top no-repeat;
+  background: url(/img/filetree/txt.png) left top no-repeat;
 }
 li.ext_vb {
-  background: url(../img/filetree/code.png) left top no-repeat;
+  background: url(/img/filetree/code.png) left top no-repeat;
 }
 li.ext_wav {
-  background: url(../img/filetree/music.png) left top no-repeat;
+  background: url(/img/filetree/music.png) left top no-repeat;
 }
 li.ext_wmv {
-  background: url(../img/filetree/film.png) left top no-repeat;
+  background: url(/img/filetree/film.png) left top no-repeat;
 }
 li.ext_xls {
-  background: url(../img/filetree/xls.png) left top no-repeat;
+  background: url(/img/filetree/xls.png) left top no-repeat;
 }
 li.ext_xml {
-  background: url(../img/filetree/code.png) left top no-repeat;
+  background: url(/img/filetree/code.png) left top no-repeat;
 }
 li.ext_zip {
-  background: url(../img/filetree/zip.png) left top no-repeat;
+  background: url(/img/filetree/zip.png) left top no-repeat;
 }
 /* END Filetree */
 .chart-legend {

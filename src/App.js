@@ -9,13 +9,16 @@ import appRoutes from './routes/index';
 
 import Sidebar from './components/Sidebar';
 import Breadcumb from './components/Breadcumb';
+import Alert from './components/Alert';
 
 class App extends Component {
     render() {
         return (
         	<div className="page-content">
+
                 <Sidebar />
                 <Breadcumb />
+                <Alert />
 
             	<div className="page-content-wrap">
                     <div className="row">

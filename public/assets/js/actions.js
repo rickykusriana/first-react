@@ -1,9 +1,5 @@
 $(document).ready(function(){        
     
-    /* PROGGRESS START */
-    $.mpb("show",{value: [0,50],speed: 5});        
-    /* END PROGGRESS START */
-    
     var html_click_avail = true;
     
     $("html").on("click", function(){
@@ -247,18 +243,6 @@ $(document).ready(function(){
     /* END MESSAGES LOADING */
     
     x_navigation();
-});
-
-$(function(){            
-    onload();
-
-    /* PROGGRESS COMPLETE */
-    $.mpb("update",{value: 100, speed: 5, complete: function(){            
-        $(".mpb").fadeOut(200,function(){
-            $(this).remove();
-        });
-    }});
-    /* END PROGGRESS COMPLETE */
 });
 
 $(window).resize(function(){

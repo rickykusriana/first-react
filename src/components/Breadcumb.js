@@ -3,9 +3,12 @@ import Breadcumbs  from 'react-router-dynamic-breadcrumbs';
 
 const routes = {
   '/dashboard': 'Dashboard',
-  '/icons': 'Icons', 
+  '/portfolio': 'Portfolio',
+  '/portfolio/:any': 'Detail',
+  '/blog': 'Blog',
+  '/contact': 'Contact',
+
   '/users': 'Users',
-  '/users/:id/info': 'User Info',
   '/users/:id/posts/:p_id': 'Post :p_id by :id' }
 
 export default class Breadcumb extends Component {
