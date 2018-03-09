@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>First React</title>            
+        <title>_</title>            
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-        <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+        <link rel="shortcut icon" href="%PUBLIC_URL%/icon.png">
 
         <link rel="stylesheet" type="text/css" id="theme" href="/assets/css/theme-default.css"/>
     </head>
     <body>
+    <body onload="$.titleAlert('___');">
+
         <div class="page-container page-navigation-top">
 
             <noscript>
@@ -45,6 +47,19 @@
         <!-- <script type="text/javascript" src="/assets/js/plugins.js"></script> -->
         <script type="text/javascript" src="/assets/js/actions.js"></script>
         <!-- END TEMPLATE -->
+
+        <script type="text/javascript" src="/assets/etc/jquery.titlealert/jquery.titlealert.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+
+                $.titleAlert("Hello World!", {
+                    requireBlur:true,
+                    stopOnFocus:true,
+                    duration:10000,
+                    interval:500
+                });
+            });
+        </script>
         
     </body>
 </html>

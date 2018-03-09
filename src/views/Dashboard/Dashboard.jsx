@@ -30,14 +30,14 @@ class Dashboard extends Component {
                             </div>
                             <div className="panel-body">
                                 <h3>Introduce</h3>
-                                <p>Hi im Ricky, nice to meet you here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua</p>
+                                <p>Hi im Ricky, nice to meet you here. Come here lets make a solution, there is still time for a cup of coffee. 
+                                Find the secret ingredients in every iteration, to keep move</p>
                             </div>
                         </div>
                     
                         <div className="panel panel-default">
                             <div className="panel-body panel-body-image">
-                                <img src="/assets/assets/images/ocean.jpg" alt="image2"/>
+                                <img src="/assets/assets/images/withlove.jpg" alt="image2"/>
                                 <a className="panel-body-inform">
                                     <span className="fa fa-heart"></span>
                                 </a>
@@ -183,7 +183,7 @@ class Dashboard extends Component {
                                     <a>Ricky</a> joined at <a target="_blank" href="http://gmf-aeroasia.co.id/" rel="noopener noreferrer">PT. GMF AEROASIA</a>
                                 </div>
                                 <div className="timeline-body">
-                                    <img src="/assets/images/logo_gmf.jpeg" className="img-text" width="150" align="left" alt="image3"/>
+                                    <img src="/assets/images/logo_gmf.jpeg" className="img-text" width="100" align="left" alt="image3"/>
                                     <p>
                                         <b>WEB DEVELOPER</b><br/>
                                         Industries : Maskapai / Aviasi (IT, Engineering & Technical)
@@ -272,7 +272,7 @@ class Dashboard extends Component {
                                     <a>Ricky</a> joined at <a target="_blank" href="http://cendanasolusindo.co.id" rel="noopener noreferrer">CENDANA SOLUSINDO</a>
                                 </div>
                                 <div className="timeline-body">
-                                    <img src="/assets/images/logo_cs.png" className="img-text" width="150" align="left" alt="image3"/>
+                                    <img src="/assets/images/logo_cs.png" className="img-text" width="100" align="left" alt="image3"/>
                                     <p>
                                         <b>WEB DEVELOPER</b><br/>
                                         Industries : IT/Computer - Software Engineer

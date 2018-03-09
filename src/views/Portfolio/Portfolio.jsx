@@ -136,21 +136,10 @@ const Portfolio = ({ match }) => {
                     </div>
                 </div>
             </div>
-            
-            <ul className="pagination pagination-sm pull-right push-down-20">
-                <li className="disabled"><a>«</a></li>
-                <li className="active"><a>1</a></li>
-                <li><a>2</a></li>
-                <li><a>3</a></li>
-                <li><a>4</a></li>                                    
-                <li><a>»</a></li>
-            </ul>
 
         </div>
 
     );
-
-        
 
 }
 

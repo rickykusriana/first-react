@@ -37,7 +37,7 @@ class Pagination extends Component {
             isLoading: true
         })
 
-        fetch('http://localhost/masterapp/api/post/blog?X-API-KEY=SeVf4BIX2R8KmZaE7JwoD1CgUkz6OLyQpMdTtG0r')
+        fetch('https://kodokode.com/api/post/blog?X-API-KEY=SeVf4BIX2R8KmZaE7JwoD1CgUkz6OLyQpMdTtG0r')
             .then(response => {
                 if (response.ok) {
                     return response.json();
@@ -204,18 +204,18 @@ class Pagination extends Component {
 			if (number === 1 && currentPage === 1) {
 				return (
 					<li key={number} className="active" id={number}>
-					<a id={number} onClick={this.handleClick}>
-					{number}
-					</a>
+						<a id={number} onClick={this.handleClick} style={{cursor: "pointer"}}>
+						{number}
+						</a>
 					</li>
 				);
 			} 
 			else if (number < upperPageBound + 1 && number > lowerPageBound) {
 				return (
 					<li key={number} id={number}>
-					<a id={number} onClick={this.handleClick}>
-					{number}
-					</a>
+						<a id={number} onClick={this.handleClick} style={{cursor: "pointer"}}>
+						{number}
+						</a>
 					</li>
 				);
 			}
@@ -228,10 +228,10 @@ class Pagination extends Component {
 		if (pageNumbers.length > upperPageBound) {
 			pageIncrementBtn = (
 				<li className="">
-				<a onClick={this.btnIncrementClick}>
-				{" "}
-				&hellip;{" "}
-				</a>
+					<a onClick={this.btnIncrementClick} style={{cursor: "pointer"}}>
+					{" "}
+					&hellip;{" "}
+					</a>
 				</li>
 			);
 		}
@@ -240,10 +240,10 @@ class Pagination extends Component {
 		if (lowerPageBound >= 1) {
 			pageDecrementBtn = (
 				<li className="">
-				<a onClick={this.btnDecrementClick}>
-				{" "}
-				&hellip;{" "}
-				</a>
+					<a onClick={this.btnDecrementClick} style={{cursor: "pointer"}}>
+					{" "}
+					&hellip;{" "}
+					</a>
 				</li>
 			);
 		}
@@ -259,10 +259,10 @@ class Pagination extends Component {
 		else {
 			renderPrevBtn = (
 				<li className={isPrevBtnActive}>
-				<a id="btnPrev" onClick={this.btnPrevClick}>
-				{" "}
-				Prev{" "}
-				</a>
+					<a id="btnPrev" onClick={this.btnPrevClick} style={{cursor: "pointer"}}>
+					{" "}
+					Prev{" "}
+					</a>
 				</li>
 			);
 		}
@@ -271,17 +271,17 @@ class Pagination extends Component {
 		if (isNextBtnActive === "disabled") {
 			renderNextBtn = (
 				<li className={isNextBtnActive}>
-				<span id="btnNext"> Next </span>
+					<span id="btnNext"> Next </span>
 				</li>
 			);
 		}
 		else {
 			renderNextBtn = (
 				<li className={isNextBtnActive}>
-				<a id="btnNext" onClick={this.btnNextClick}>
-				{" "}
-				Next{" "}
-				</a>
+					<a id="btnNext" onClick={this.btnNextClick} style={{cursor: "pointer"}}>
+					{" "}
+					Next{" "}
+					</a>
 				</li>
 			);
 		}
