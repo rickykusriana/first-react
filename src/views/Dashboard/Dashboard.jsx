@@ -23,7 +23,7 @@ class Dashboard extends Component {
                         
                         <div className="panel panel-default">
                             <div className="panel-body panel-body-image">
-                                <img src="/assets/assets/images/nature.jpg" alt="image1"/>
+                                <img src="/assets/images/vendor/nature.jpg" alt="image1"/>
                                 <a className="panel-body-inform">
                                     <span className="fa fa-check"></span>
                                 </a>
@@ -37,7 +37,7 @@ class Dashboard extends Component {
                     
                         <div className="panel panel-default">
                             <div className="panel-body panel-body-image">
-                                <img src="/assets/assets/images/withlove.jpg" alt="image2"/>
+                                <img src="/assets/images/vendor/withlove.jpg" alt="image2"/>
                                 <a className="panel-body-inform">
                                     <span className="fa fa-heart"></span>
                                 </a>
