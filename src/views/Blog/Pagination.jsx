@@ -37,7 +37,17 @@ class Pagination extends Component {
             isLoading: true
         })
 
-        fetch('https://kodokode.com/api/post/blog?X-API-KEY=SeVf4BIX2R8KmZaE7JwoD1CgUkz6OLyQpMdTtG0r')
+        var getApi;
+
+        if (window.location.origin === 'http://localhost:3000') {
+        	getApi = 'http://localhost/masterapp/api/post/blog?X-API-KEY=SeVf4BIX2R8KmZaE7JwoD1CgUkz6OLyQpMdTtG0r';
+        }
+        else {
+        	getApi = 'https://kodokode.com/api/post/blog?X-API-KEY=SeVf4BIX2R8KmZaE7JwoD1CgUkz6OLyQpMdTtG0r';
+        }
+
+        fetch(getApi)
+
             .then(response => {
                 if (response.ok) {
                     return response.json();
@@ -288,7 +298,7 @@ class Pagination extends Component {
 		
 		return (
 			<div>
-				<div className="panel panel-default">
+				<div className="panel panel-success">
                     <div className="panel-body posts">
                         <div className="row">
 							{renderTodos}

@@ -7,6 +7,7 @@ const routes = {
   '/portfolio/:any': 'Detail',
   '/blog': 'Blog',
   '/contact': 'Contact',
+  '/chat': 'Chat',
 
   '/users': 'Users',
   '/users/:id/posts/:p_id': 'Post :p_id by :id' }

@@ -2,6 +2,7 @@ import Dashboard from '../views/Dashboard/Dashboard';
 import Portfolio from '../views/Portfolio/Portfolio';
 import Blog from '../views/Blog/Blog';
 import Contact from '../views/Contact/Contact';
+import Chat from '../views/Chat/Chat';
 
 const appRoutes = [
     { 
@@ -27,6 +28,12 @@ const appRoutes = [
         name: "Contact",
         icon: "fa fa-phone",
         content: Contact
+    },
+    { 
+        path: "/chat",
+        name: "Chat",
+        icon: "fa fa-comments",
+        content: Chat
     },
     { 
     	redirect: true, 
